@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "jest",
     "build:re": "bsb -make-world",
-    "clean:re": "bsb -clean-world"
+    "clean:re": "bsb -clean-world",
+    "prebuild": "yarn clean:re && yarn build:re",
+    "start": "snowpack dev",
+    "test": "jest"
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.5.1",
