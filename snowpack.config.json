@@ -4,5 +4,5 @@
     "run:re,rei": "bsb -make-world",
     "run:re,rei::watch": "$1 -w"
   },
-  "plugins": []
+  "plugins": [["@snowpack/plugin-webpack", {}]]
 }
