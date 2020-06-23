@@ -1,41 +1,21 @@
-# New Project
-
-> ✨ Bootstrapped with Create Snowpack App (CSA).
-
-> Using `npm`
+## Reproduce Steps
 
 ```sh
-npx create-snowpack-app new-dir --template app-template-reason-react
+git clone https://github.com/jihchi/snowpack-reason-react-227-error.git
+cd snowpack-reason-react-227-error
+yarn
+yarn build
+npx serve build
 ```
 
-> Using `yarn`
+Open http://localhost:5000 in your browser.
 
-```sh
-npx create-snowpack-app new-dir --template app-template-reason-react --use-yarn
-```
+### The Error
 
-## Available Scripts
+https://reactjs.org/docs/error-decoder.html?invariant=227
 
-### npm start
+> **ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.**
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## Screenshot
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### npm test
-
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-### npm run build
-
-Builds a static copy of yor site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" or "@snowpack/plugin-parcel" to your `snowpack.config.json` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+![Screenshot](./screenshot.png?raw=true "Minified React error #227")
