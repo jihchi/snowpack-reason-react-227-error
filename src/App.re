@@ -23,3 +23,5 @@ let make = () => {
     </header>
   </div>;
 };
+
+let default = make;
